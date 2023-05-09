@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.openMenu{
+    background-color: #65599b;
+    display: flex;
+    width: 37px;
+    height: 37px;
+    margin: 16px;
+    border-radius: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    transition: all .1s linear;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    z-index: 11;
+}
+ 
+.openMenu:hover{
+    background-color: #9991bb;
+}
+.closeMenu:hover{
+    background-color: #9991bb;
+}
+
+.openMenu .color{
+    background-color: white;
+    height: 2px;
+    width: 19px;
+}
+.sidebarHeader{
+    display: flex;
+    margin-bottom: 28px;
+}
+.sidebar{
+    background: white;
+    height: 100vh;
+    width: 17vw;
+    
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: 850ms;
+    z-index: 13; 
+}
+.drawer{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(0 0 0 / 76%);;
+    position: fixed;
+    top: 0;
+    z-index: 12;
+}
+.active{
+    left: 0;
+    transition: 350ms;
+}
+
+.closeMenu{
+    background-color: #65599b;
+    display: flex;
+    width: 37px;
+    height: 37px;
+    margin: 16px;
+    border-radius: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    transition: all .1s linear;
+    cursor: pointer;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    height: 37px;
+    margin: 16px auto 16px 16px;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.sidebarItems{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+}
+
+.sidebarItem{
+    color: black;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-left: 7%;
+    width: 93%;
+    padding: 7px 7px 7px 16px;
+    box-sizing: border-box;
+    border-radius: 19px 0 0 19px;
+}
+
+.sidebarItem:hover{
+    background-color: #0808081c;
+}
+
+
+.closeMenu .color{
+    background-color: white;
+    height: 2px;
+    width: 19px;
+}
+
+
+
+
+.sidebarFooter{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+
+.login{
+    background: #65599b;
+    display: flex;
+    height: 27px;
+    align-items: center;
+    justify-content: center;
+    width: 57px;
+    border: 2px solid #392c75;
+    border-radius: 7px;
+    color: black;
+    text-decoration: none;
+}
+
+.signUp{
+    background: white;
+    display: flex;
+    height: 27px;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    border: 2px solid #392c75;
+    border-radius: 7px;
+    color: black;
+    text-decoration: none;
+}
+
+.login:hover{
+    background-color: white;
+}
+.signUp:hover{
+    background-color: #65599b;
+}
